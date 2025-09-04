@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Nandini Nakka | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <style>
         :root {
             --primary-color: #ffd6e0;
@@ -632,7 +632,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="h.jpg">
+                    <img src="h.jpg" />
                 </div>
             </div>
         </div>
@@ -726,9 +726,10 @@
                 <p>Some of my recent work and projects</p>
             </div>
             <div class="projects-container">
+                <!-- Existing project -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Project">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Project" />
                     </div>
                     <div class="project-info">
                         <h3>My Portfolio</h3>
@@ -738,7 +739,39 @@
                             <span class="project-tag">CSS</span>
                             <span class="project-tag">JavaScript</span>
                         </div>
-                        <a href=https://surya-nandini.github.io/git/ class="btn">View Project</a>
+                        <a href="https://surya-nandini.github.io/git/" class="btn">View Project</a>
+                    </div>
+                </div>
+                <!-- New online complaint registration project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Complaint Registration Platform" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Online Complaint Registration</h3>
+                        <p>A platform to register and manage complaints online efficiently, ensuring transparency and quick resolution. Built as a collaborative project to streamline complaint processes.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <a href="https://github.com/surya-nandini/online-complaint" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <!-- New serverless web app using AWS -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Serverless Web App" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Serverless Web Application (AWS)</h3>
+                        <p>A scalable web application built using AWS Lambda, API Gateway, and S3, implementing serverless architecture for cost-effective and efficient deployment.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">AWS Lambda</span>
+                            <span class="project-tag">API Gateway</span>
+                            <span class="project-tag">S3</span>
+                        </div>
+                        <a href="https://github.com/surya-nandini/serverless-aws-webapp" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -818,15 +851,15 @@
                     <form>
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" required />
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" required />
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" required>
+                            <input type="text" id="subject" required />
                         </div>
                         <div class="form-group">
                             <label for="message">Your Message</label>
@@ -840,7 +873,7 @@
     </section>
 
     <!-- Footer -->
-    <foFoter>
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="logo">Nandini</div>
@@ -879,10 +912,10 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
